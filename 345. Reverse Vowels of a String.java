@@ -18,10 +18,7 @@ class Solution {
                 chars[right] = tempCh;
                 left++;
                 right--;
-
         }
-
         return new String(chars);
-    
     }
 }
