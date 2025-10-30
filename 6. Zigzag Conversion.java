@@ -4,7 +4,7 @@ class Solution {
         char[] mass = s.toCharArray();
         int steper = 2 * numRows - 2;
 
-        String result = new String("");
+        var result = new StringBuilder();
         var max = s.length();
 
         if ( numRows == 1) {
@@ -16,12 +16,12 @@ class Solution {
             int pointer = i;
 
             while (pointer < max) {
-                result = result + (mass[pointer]);
+                result.append(mass[pointer]);
 
                 if ((i != 0) & (i< numRows-1)) {
                     var stt = pointer + steper - i * 2;
                     if (stt< max) {
-                        result = result + (mass[stt]);
+                        result.append(mass[stt]);
                     }
                 }
                 pointer += steper;
