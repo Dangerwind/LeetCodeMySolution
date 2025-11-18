@@ -12,7 +12,6 @@ class Solution {
                     if (a == b || b == c || c == a ) {
                         continue;
                     }
-
                      if ((Math.abs(target - maiBeTarget)) < Math.abs(target - closeTarget)) {
                          closeTarget = maiBeTarget;
                      }
